@@ -54,8 +54,8 @@ header {
     width: 92px;
     left: 0;
     top: 0;
-    margin-left: 8%;
-    margin-top: 105px;
+    margin-left: 8.8%;
+    margin-top: 111px;
     z-index: -1;
 }
 .ball2 {
@@ -63,8 +63,8 @@ header {
     width: 35px;
     left: 0;
     top: 0;
-    margin-left: 6%;
-    margin-top: 185px;
+    margin-left: 6.5%;
+    margin-top: 190px;
     z-index: -1;
 }
 .balls9 {
@@ -81,8 +81,8 @@ header {
     width: 50px;
     left: 0;
     top: 0;
-    margin-left: 11.5%;
-    margin-top: 205px;
+    margin-left: 12.3%;
+    margin-top: 220px;
     z-index: -2;
 }
 .ball3 {
@@ -106,7 +106,7 @@ header {
     right: 0;
     top: 0;
     width: 25px;
-    margin-top: 180px;
+    margin-top: 170px;
     margin-right: 6%;
 }
 .scheduleClasses {
