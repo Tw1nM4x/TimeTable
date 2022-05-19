@@ -24,6 +24,12 @@
         </div>
         <div class="navigation">
             <div class="navigationText">
+
+                <img src="img/ball1.png" class = "ball1">
+                <img src="img/ball2.png" class = "ball2">
+                <img src="img/balls9.png" class = "balls9">
+                <img src="img/waves.png" class = "waves">
+
                 <div class="scheduleClasses">Расписание занятий</div>
 
                 <div class="mySchedule">Моё расписание</div>
@@ -47,11 +53,16 @@
                 <div class="data">
                     <div class="day">11 - 16</div>
                     <div class="month">апр.</div>
-                    <div class="year">2022</div>
+                    <div class="year">2022г.</div>
                 </div>
                 <div class="week">26 неделя(чет.)</div>
             </div>
         </div>
+
+        <img src="img/ball3.png" class = "ball3">
+        <img src="img/ball4.png" class = "ball4">
+        <img src="img/waves2.png" class = "waves2">
+
         <div class="scheduleBlock">
             <div class="weekday">
                 <div class="mondayBlock" id="weekdayBlock">
@@ -82,7 +93,7 @@
 
             <div class="scheduleBox">
                 <div class="lesson1" id="lessons">
-                    <div class="lessonBlock" style="height=170px;">
+                    <div class="lessonBlock" style="height: 170px;">
                         <div class="lessonInfo" id="mondey">
                             <div class="time">8:30 - 10:00</div>
                             <div class="audience">D624 (D752)</div>
