@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-image: url(img/schedule-body.png);
+    background-image: url(../img/schedule-body.png);
     background-repeat: no-repeat;
     /* background-size: cover; */
     background-size: 100% 100%;
@@ -35,7 +35,7 @@ header {
     width: 46px;
     height: 46px;
     border-radius: 100%;
-    background-image: url(img/avatar.png);
+    background-image: url(../img/avatar.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin-right: 100px;
@@ -179,7 +179,7 @@ header {
 .btnLeft {
     width: 17px;
     height: 17px;
-    background-image: url(img/btnLeft.png);
+    background-image: url(../img/btnLeft.png);
     background-repeat: no-repeat;
     margin-top: auto;
     margin-bottom: auto;
@@ -189,7 +189,7 @@ header {
 .btnRight {
     width: 17px;
     height: 17px;
-    background-image: url(img/btnRight.png);
+    background-image: url(../img/btnRight.png);
     background-repeat: no-repeat;
     margin-top: auto;
     margin-bottom: auto;
@@ -215,7 +215,7 @@ header {
     width: 100%;
     height: 1550px;
     margin-top: 40px;
-    background-image: url(img/scheduleBlock.png);
+    background-image: url(../img/scheduleBlock.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -302,32 +302,32 @@ header {
     font-size: 14px;
 }
 #mondey {
-    background-image: url(img/monday-lesson.png);
+    background-image: url(../img/monday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #tuesday {
-    background-image: url(img/tuesday-lesson.png);
+    background-image: url(../img/tuesday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #wednesday {
-    background-image: url(img/wednesday-lesson.png);
+    background-image: url(../img/wednesday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #thursday {
-    background-image: url(img/thursday-lesson.png);
+    background-image: url(../img/thursday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #friday {
-    background-image: url(img/friday-lesson.png);
+    background-image: url(../img/friday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
 #saturday {
-    background-image: url(img/saturday-lesson.png);
+    background-image: url(../img/saturday-lesson.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
