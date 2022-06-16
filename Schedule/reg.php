@@ -55,6 +55,8 @@ $sql = "INSERT INTO `users` (`Fname`, `Lname`, `mail`, `pass`, `group`) VALUES
 
 $_SESSION['auth'] = true;
 
+$_SESSION['week_numder'] = 5;
+
 $conn->query($sql);
 $conn->close();
 header('Location: /');

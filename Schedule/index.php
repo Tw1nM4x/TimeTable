@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php
+    session_start(); 
+    include ('select_week.php');
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -47,17 +50,14 @@
         <div class="info">
             <div class="group1">Б9120-09.03.03пикд</div>
             <div class="time1">
-                <div class="btnLeft"></div>
+
+                <div onclick="location.href='last_day.php';" class="btnLeft"></div>
                 <div class="timeText">Сегодня</div>
-                <div class="btnRight"></div>
+                <div onclick="location.href='next_day.php';" class="btnRight"></div>
             </div>
             <div class="dataBlock">
-                <div class="data">
-                    <div class="day">11 - 16</div>
-                    <div class="month">апр.</div>
-                    <div class="year">2022г.</div>
-                </div>
-                <div class="week">26 неделя(чет.)</div>
+                <div class="data"><?php echo($_SESSION['selected_day']); ?> </div>
+                <div class="week"><?php echo($_SESSION['selected_week']); ?></div>
             </div>
         </div>
 

@@ -33,6 +33,8 @@ if(password_verify($pass,$hashpass)){
     $_SESSION['Lname'] = $Lname;
     $_SESSION['group'] = $group;
 
+    $_SESSION['week_numder'] = 5;
+
     header('Location: /');
 } else {
     $_SESSION['error'] = 'Введена неверная почта или пароль';

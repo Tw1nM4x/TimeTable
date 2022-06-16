@@ -167,8 +167,9 @@ header {
     font-family: "Exo 2", "Arial";
 }
 .time1 {
+    position: absolute;
     display: flex;
-    margin-left: 11%;
+    margin-left: 706px;
 }
 .timeText {
     font-size: 28px;
