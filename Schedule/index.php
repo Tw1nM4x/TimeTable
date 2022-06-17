@@ -50,10 +50,15 @@
         <div class="info">
             <div class="group1">Б9120-09.03.03пикд</div>
             <div class="time1">
-
-                <div onclick="location.href='last_day.php';" class="btnLeft"></div>
+                <?php if($_SESSION['week_numder'] > 1){ ?>
+                    <div onclick="location.href='last_day.php';" class="btnLeft"></div>
+                <?php } ?>
+                
                 <div class="timeText">Сегодня</div>
-                <div onclick="location.href='next_day.php';" class="btnRight"></div>
+
+                <?php if($_SESSION['week_numder'] < 18){ ?>
+                    <div onclick="location.href='next_day.php';" class="btnRight"></div>
+                <?php } ?>
             </div>
             <div class="dataBlock">
                 <div class="data"><?php echo($_SESSION['selected_day']); ?> </div>
@@ -69,27 +74,27 @@
             <div class="weekday">
                 <div class="mondayBlock" id="weekdayBlock">
                     <div class="mondayText" id="weekday">Понедельник</div>
-                    <div class="mondayData" id="weekday">11.05</div>
+                    <div class="mondayData" id="weekday"><?php echo($_SESSION['select_monday']); ?></div>
                 </div>
                 <div class="tuesdayBlock" id="weekdayBlock">
                     <div class="tuesdayText" id="weekday">Вторник</div>
-                    <div class="tuesdayData" id="weekday">12.05</div>
+                    <div class="tuesdayData" id="weekday"><?php echo($_SESSION['select_tuesday']); ?></div>
                 </div>
                 <div class="wednesdayBlock" id="weekdayBlock">
                     <div class="wednesdayText" id="weekday">Среда</div>
-                    <div class="wednesdayData" id="weekday">13.05</div>
+                    <div class="wednesdayData" id="weekday"><?php echo($_SESSION['select_wednesday']); ?></div>
                 </div>
                 <div class="thursdayBlock" id="weekdayBlock">
                     <div class="thursdayText" id="weekday">Четверг</div>
-                    <div class="thursdayData" id="weekday">14.05</div>
+                    <div class="thursdayData" id="weekday"><?php echo($_SESSION['select_thursday']); ?></div>
                 </div>
                 <div class="fridayBlock" id="weekdayBlock">
                     <div class="fridayText" id="weekday">Пятница</div>
-                    <div class="fridayData" id="weekday">15.05</div>
+                    <div class="fridayData" id="weekday"><?php echo($_SESSION['select_friday']); ?></div>
                 </div>
                 <div class="saturdayBlock" id="weekdayBlock">
                     <div class="saturdayText" id="weekday">Суббота</div>
-                    <div class="saturdayData" id="weekday">16.05</div>
+                    <div class="saturdayData" id="weekday"><?php echo($_SESSION['select_saturday']); ?></div>
                 </div>
             </div>
 
