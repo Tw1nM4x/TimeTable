@@ -98,174 +98,52 @@
                 </div>
             </div>
 
-            <div class="scheduleBox">
-                <div class="lesson1" id="lessons">
-                    <div class="lessonBlock" style="height: 170px;">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <?php
-                        $id = 1;
-                        $z = "'";
-                        $block = "'block";
-                        $extraInfo = "'extraInfo";
-                        $heightClose = "'72%'";
-                        $heightOpen = "'80%'";
-                        ?>
-                        <?php
-                        echo'
-                          <div class="lessonInfoName" id="block'.$id.'" onclick="Open('.$block.''.$id.''.$z.', '.$heightClose.', '.$heightOpen.','.$extraInfo.''.$id.''.$z.')">
-                              <div class="lessonName">Аналитическая геометрия</div>
-                              <div style="display:none" id="extraInfo'.$id.'">
-                                <div class="type">Лабараторные работы</div>
-                                <div class="teacherName">Фамилия Имя Отчество</div>
-                              </div>
-                              <div class="groupNumber" >Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                          </div>';
-                        $id++;
-                        ?>
-                    </div>
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="tuesday">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div id="extraInfo">
-                              <div class="type">Лабараторные работы</div>
-                              <div class="teacherName">Фамилия Имя Отчество</div>
-                            </div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="wednesday">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="thursday">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="friday">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="saturday">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
+            <!-- <div class="lessonBlock" style="height: 170px;">
+                <div class="lessonInfo" id="mondey">
+                    <div class="time">8:30 - 10:00</div>
+                    <div class="audience">D624 (D752)</div>
                 </div>
-                <div class="lesson2" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
+                <?php /*
+                $id = 1;
+                $z = "'";
+                $block = "'block";
+                $extraInfo = "'extraInfo";
+                $heightClose = "'72%'";
+                $heightOpen = "'80%'";
+                ?>
+                <?php
+                echo'
+                    <div class="lessonInfoName" id="block'.$id.'" onclick="Open('.$block.''.$id.''.$z.', '.$heightClose.', '.$heightOpen.','.$extraInfo.''.$id.''.$z.')">
+                        <div class="lessonName">111111</div>
+                        <div style="display:none" id="extraInfo'.$id.'">
+                        <div class="type">Лабараторные работы</div>
+                        <div class="teacherName">Фамилия Имя Отчество</div>
                         </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
+                        <div class="groupNumber" >Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
+                    </div>';
+                $id++;*/
+                ?>
+            </div>-->
+            <?php 
+            include ('echo_table.php');
+            
+            ?>
+
+            <div class="lessonBlock25">
+                <div class="lessonInfo" id="monday">
+                    <div class="time">8:30 - 10:00</div>
+                    <div class="audience">D624 (D752)</div>
                 </div>
-                <div class="lesson3" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
+                <div class="lessonInfoName">
+                    <div class="lessonName">2222222s</div>
+                    <div id="extraInfo">
+                        <div class="type">Лабараторные работы</div>
+                        <div class="teacherName">Фамилия Имя Отчество</div>
                     </div>
-                </div>
-                <div class="lesson4" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lesson5" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lesson6" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lesson7" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="lesson8" id="lessons">
-                    <div class="lessonBlock">
-                        <div class="lessonInfo" id="mondey">
-                            <div class="time">8:30 - 10:00</div>
-                            <div class="audience">D624 (D752)</div>
-                        </div>
-                        <div class="lessonInfoName">
-                            <div class="lessonName">Аналитическая геометрия</div>
-                            <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
-                        </div>
-                    </div>
+                    <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
                 </div>
             </div>
+
         </div>
     </div>
     <script src="js/main.js"></script>
