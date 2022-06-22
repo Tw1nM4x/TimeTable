@@ -10,6 +10,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/addFile.css">
     <title>Расписание</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -37,18 +38,82 @@
 
                 <div class="scheduleClasses">Расписание занятий</div>
 
-                <div class="mySchedule">Моё расписание</div>
-                <div class="searchGroup">Поиск по групе</div>
-                <div class="searchTeacher">Поиск по преподавателю</div>
-                <div class="searchAudience">Поиск по аудитории</div>
+                <div class="mySchedule" onclick="location.href='resetSort.php'">Моё расписание</div>
+                <div class="searchGroup" onclick="Select('selectGroup')">Поиск по группе</div>
+                <div class="searchTeacher" onclick="Select('selectTeacher')">Поиск по преподавателю</div>
+                <div class="searchAudience" onclick="Select('selectClassroom')">Поиск по аудитории</div>
             </div>
         </div>
     </div>
 </header>
+<script>
+function Select(id){
+    document.getElementById(id).style.display = 'flex';
+}
+</script>
 <body>
+    <div id="selectGroup" class="ava_massage">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <form action="setSort.php" class="ava_ava_add" method="post" enctype="multipart/form-data">
+        <label class = "heading_add">Поиск по группе</label>
+        <input type="text" name="sortType" id="sortType" value="group" style="display:none;"></input>
+        <div class="ava_input__wrapper">
+          <select name="sort" id="groups">
+            <?php
+              include('connect.php');
+              $query = mysqli_query($conn, "SELECT * FROM `groups` ORDER BY `name`");
+              while($group = mysqli_fetch_assoc($query)){
+                $group_id = $group['id'];
+                $query2 = mysqli_query($conn, "SELECT * FROM `subgroups` WHERE '$group_id' = `group_id` ORDER BY `count`");
+                while($subgroup = mysqli_fetch_assoc($query2)){
+                  echo '<option value="'.$group['id'].'$'.$subgroup['id'].'">'.$group['name'].' / '.$subgroup['count'].'</option>';
+                }
+              }
+            ?>
+          </select>
+        </div>
+        <button type="submit" class = "ava_add">Искать</button>
+      </form>
+    </div>
+    <div id="selectTeacher" class="ava_massage">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <form action="setSort.php" class="ava_ava_add" method="post" enctype="multipart/form-data">
+        <label class = "heading_add">Поиск по группе</label>
+        <input type="text" name="sortType" id="sortType" value="teacher" style="display:none;"></input>
+        <div class="ava_input__wrapper">
+          <select name="sort">
+            <?php
+              $query = mysqli_query($conn, "SELECT * FROM `teachers` ORDER BY `name`");
+              while($teacher = mysqli_fetch_assoc($query)){
+                echo '<option value="'.$teacher['id'].'">'.$teacher['name'].'</option>';
+              }
+            ?>
+          </select>
+        </div>
+        <button type="submit" class = "ava_add">Искать</button>
+      </form>
+    </div>
+    <div id="selectClassroom" class="ava_massage">
+      <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+      <form action="setSort.php" class="ava_ava_add" method="post" enctype="multipart/form-data">
+        <label class = "heading_add">Поиск по группе</label>
+        <input type="text" name="sortType" id="sortType" value="classroom" style="display:none;"></input>
+        <div class="ava_input__wrapper">
+          <select name="sort" id="groups">
+            <?php
+              $query = mysqli_query($conn, "SELECT * FROM `classroom` ORDER BY `label`");
+              while($classroom = mysqli_fetch_assoc($query)){
+                echo '<option value="'.$classroom['id'].'">'.$classroom['label'].'</option>';
+              }
+            ?>
+          </select>
+        </div>
+        <button type="submit" class = "ava_add">Искать</button>
+      </form>
+    </div>
     <div class="main">
         <div class="info">
-            <div class="group1">Б9120-09.03.03пикд</div>
+            <div class="group1"><?php echo $_SESSION['sortPrint']; ?></div>
             <div class="time1">
                 <?php if($_SESSION['week_numder'] > 1){ ?>
                     <div onclick="location.href='last_day.php';" class="btnLeft"></div>

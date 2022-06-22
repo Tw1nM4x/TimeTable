@@ -36,9 +36,17 @@
 
                 <div class="name_reg" style="top: 310px;"><b>Группа:</b></div>
                 <select name="group" class="col-75" style="top: 310px;">
-                    <option>Б9120-09.03.03пикд</option>
-                    <option>Б9120-09.03.03пиэ</option>
-                    <option>Б9120-09.03.03пиуп</option>
+                  <?php
+                    include('connect.php');
+                    $query = mysqli_query($conn, "SELECT * FROM `groups` ORDER BY `name`");
+                    while($group = mysqli_fetch_assoc($query)){
+                      $group_id = $group['id'];
+                      $query2 = mysqli_query($conn, "SELECT * FROM `subgroups` WHERE '$group_id' = `group_id` ORDER BY `count`");
+                      while($subgroup = mysqli_fetch_assoc($query2)){
+                        echo '<option value="'.$group['id'].'$'.$subgroup['id'].'">'.$group['name'].' / '.$subgroup['count'].'</option>';
+                      }
+                    }
+                  ?>
                 </select>
 
                 <div class="name_reg" style="top: 420px;"><b>Пароль:</b></div>

@@ -62,8 +62,31 @@
             /*$query = mysqli_query($conn, "SELECT id FROM TimeTable WHERE date = '".$date_a."'");
 
             $pair = mysqli_fetch_assoc($query); // хранит в себе то что хранит вся сторочка TimeTable */
-            $query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date`='$date_a' AND `bell_id`='$ii'");
-		    $pair = mysqli_fetch_assoc($query);
+            if($_SESSION['sort']){
+              switch($_SESSION['sortType']){
+                case 'group':
+                  $groupSelect = $_SESSION['groupSelect'];
+                  $subGroupSelect = $_SESSION['subGroupSelect'];
+                  $query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date`='$date_a' AND `bell_id`='$ii' AND `groups_id` = '$groupSelect' AND `subgroups_id` = '$subGroupSelect'");
+    	            $pair = mysqli_fetch_assoc($query);
+                  break;
+                case 'teacher':
+                  $teacher = $_SESSION['sort'];
+                  $query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date`='$date_a' AND `bell_id`='$ii' AND `teacher_id` = '$teacher'");
+    	            $pair = mysqli_fetch_assoc($query);
+                  break;
+                case 'classroom':
+                  $classroom = $_SESSION['sort'];
+                  $query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date`='$date_a' AND `bell_id`='$ii' AND `classroom_id` = '$classroom'");
+                  $pair = mysqli_fetch_assoc($query);
+                  break;
+              }
+            }
+            else
+            {
+              $query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date`='$date_a' AND `bell_id`='$ii'");
+  	          $pair = mysqli_fetch_assoc($query);
+            }
 
             //$day_name = date("w", mktime(0,0,0, date("m"), date("d"), date("Y")));
             if($pair['id'] != ''){
@@ -103,7 +126,7 @@
                             <div class="type">'.$subject_name.'</div>
                             <div class="teacherName">'.$teacher['name'].'</div>
                         </div>
-                        <div class="groupNumber">'.$groups['name'].' <br> (подгруппа: '.$subgroups['count'].')</div>
+                        <div class="groupNumber">'.$groups['name'].' / '.$subgroups['count'].'</div>
                     </div>
                 </div>';
             }

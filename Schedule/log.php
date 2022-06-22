@@ -31,7 +31,25 @@ if(password_verify($pass,$hashpass)){
 
     $_SESSION['Fname'] = $Fname;
     $_SESSION['Lname'] = $Lname;
-    $_SESSION['group'] = $group;
+
+    $sort = $group;
+    $_SESSION['sort']=$sort;
+    $_SESSION['sortType']="group";
+    $array = explode('$', $sort);
+    $groupSelect = $array[0];
+    $subGroupSelect = $array[1];
+    $_SESSION['groupSelect']=$groupSelect;
+    $_SESSION['subGroupSelect']=$subGroupSelect;
+    $query = mysqli_query($conn, "SELECT * FROM `groups` WHERE '$groupSelect' = `id`");
+    $group = mysqli_fetch_assoc($query);
+    $query = mysqli_query($conn, "SELECT * FROM `subgroups` WHERE '$subGroupSelect' = `id`");
+    $subgroup = mysqli_fetch_assoc($query);
+    $_SESSION['sortPrint']=$group['name'].' / '.$subgroup['count'];
+
+    $_SESSION['group'] = $_SESSION['sortPrint'];
+    $_SESSION['saveSort'] = $sort;
+    $_SESSION['saveSortType'] = "group";
+    $group = $_SESSION['sort'];
 
     $_SESSION['week_numder'] = 5;
 

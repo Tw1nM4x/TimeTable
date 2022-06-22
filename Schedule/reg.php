@@ -6,14 +6,31 @@ include 'connect.php';
 $Fname = htmlspecialchars(trim($_POST['Fname']));
 $Lname = htmlspecialchars(trim($_POST['Lname']));
 $mail = filter_var(trim($_POST['mail']), FILTER_SANITIZE_EMAIL);
-$group = htmlspecialchars(trim($_POST['group']));
 $pass = htmlspecialchars(trim($_POST['pass']));
 
 $_SESSION['Fname'] = htmlspecialchars(trim($_POST['Fname']));
 $_SESSION['Lname'] = htmlspecialchars(trim($_POST['Lname']));
 $_SESSION['mail'] = htmlspecialchars(trim($_POST['mail']));
-$_SESSION['group'] = htmlspecialchars(trim($_POST['group']));
+$sort = htmlspecialchars(trim($_POST['group']));
 $_SESSION['pass'] = htmlspecialchars(trim($_POST['pass']));
+
+$_SESSION['sort']=$sort;
+$_SESSION['sortType']="group";
+$array = explode('$', $sort);
+$groupSelect = $array[0];
+$subGroupSelect = $array[1];
+$_SESSION['groupSelect']=$groupSelect;
+$_SESSION['subGroupSelect']=$subGroupSelect;
+$query = mysqli_query($conn, "SELECT * FROM `groups` WHERE '$groupSelect' = `id`");
+$group = mysqli_fetch_assoc($query);
+$query = mysqli_query($conn, "SELECT * FROM `subgroups` WHERE '$subGroupSelect' = `id`");
+$subgroup = mysqli_fetch_assoc($query);
+$_SESSION['sortPrint']=$group['name'].' / '.$subgroup['count'];
+
+$_SESSION['group'] = $_SESSION['sortPrint'];
+$_SESSION['saveSort'] = $sort;
+$_SESSION['saveSortType'] = "group";
+$group = $_SESSION['sort'];
 
 $_SESSION['avatar'] = "0";
 $avatar = $_SESSION['avatar'];

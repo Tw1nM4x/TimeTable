@@ -163,7 +163,7 @@ header {
 }
 .group1 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 19px;
     font-family: "Exo 2", "Arial";
 }
 .time1 {
@@ -255,7 +255,7 @@ header {
     margin-left: 321px;
     width: 279px;
     height: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -266,7 +266,7 @@ header {
     margin-left: 600px;
     width: 279px;
     height: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -277,7 +277,7 @@ header {
     margin-left: 879px;
     width: 277px;
     height: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -288,7 +288,7 @@ header {
     margin-left: 1156px;
     width: 279px;
     height: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -299,7 +299,7 @@ header {
     margin-left: 1435px;
     width: 279px;
     height: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -325,7 +325,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -337,7 +337,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -349,7 +349,7 @@ header {
     width: 277px;
     height: 180px;
     margin-top: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -361,7 +361,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -373,7 +373,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 180px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -399,7 +399,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 360px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -411,7 +411,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 360px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -423,7 +423,7 @@ header {
     width: 277px;
     height: 180px;
     margin-top: 360px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -435,7 +435,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 360px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -447,7 +447,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 360px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -473,7 +473,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 540px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -485,7 +485,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 540px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -547,7 +547,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 720px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -559,7 +559,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 720px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -571,7 +571,7 @@ header {
     width: 277px;
     height: 180px;
     margin-top: 720px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -583,7 +583,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 720px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -595,7 +595,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 720px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -620,7 +620,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 900px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -632,7 +632,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 900px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -644,7 +644,7 @@ header {
     width: 277px;
     height: 180px;
     margin-top: 900px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -656,7 +656,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 900px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -668,7 +668,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 900px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -693,7 +693,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 1080px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -705,7 +705,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 1080px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -717,7 +717,7 @@ header {
     width: 277px;
     height: 180px;
     margin-top: 1080px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -729,7 +729,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 1080px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -741,7 +741,7 @@ header {
     width: 279px;
     height: 180px;
     margin-top: 1080px;
-    
+
     box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
     border-radius: 20px;
     box-sizing: border-box;
@@ -809,16 +809,20 @@ header {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     color: #712A73;
 }
 .lessonName {
     width: 100%;
     color: #1D197D;
-    font-size: 20px;
+    font-size: 16px;
+    font-weight: bold;
     text-align: center;
     justify-content: center;
     font-family: "Inter", "Arial";
-    padding-top: 12px;
+    padding: 5px;
     box-sizing: border-box;
 }
 .groupNumber {
@@ -827,11 +831,11 @@ header {
     text-align: center;
     color: #C9BAD1;
     font-family: "Inter", "Arial";
-    font-size: 11px;
+    font-size: 10px;
     margin-top: 10px;
 }
 .name {
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Exo 2", "Arial";
 }
 .type {
@@ -839,14 +843,14 @@ header {
     text-align: center;
     color:#1D197D;
     font-family: "Inter", "Arial";
-    font-size: 14px;
-    margin-top: 10px;
+    font-size: 12px;
+    margin-top: 5px;
 }
 .teacherName {
     width: 100%;
     text-align: center;
     color:#1D197D;
     font-family: "Inter", "Arial";
-    font-size: 16px;
+    font-size: 13px;
     margin-top: 5px;
 }
