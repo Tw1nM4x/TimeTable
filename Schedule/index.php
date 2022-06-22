@@ -1,5 +1,5 @@
 <?php
-    session_start(); 
+    session_start();
     include ('select_week.php');
 ?>
 
@@ -53,7 +53,7 @@
                 <?php if($_SESSION['week_numder'] > 1){ ?>
                     <div onclick="location.href='last_day.php';" class="btnLeft"></div>
                 <?php } ?>
-                
+
                 <div class="timeText">Сегодня</div>
 
                 <?php if($_SESSION['week_numder'] < 18){ ?>
@@ -124,12 +124,12 @@
                 $id++;*/
                 ?>
             </div>-->
-            <?php 
+            <?php
             include ('echo_table.php');
-            
+
             ?>
 
-            <div class="lessonBlock25">
+            <!--<div class="lessonBlock25">
                 <div class="lessonInfo" id="monday">
                     <div class="time">8:30 - 10:00</div>
                     <div class="audience">D624 (D752)</div>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="groupNumber">Б9120-09.03.03 ПИКД <br> (подгруппа: 1)</div>
                 </div>
-            </div>
+            </div>-->
 
         </div>
     </div>

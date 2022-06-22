@@ -24,7 +24,7 @@
                 $day_name = 'saturday';
                 break;
         }
-        $date = $_SESSION['select_'.$i.''];
+        $date = $_SESSION['select_'.$day_name.''];
 
         for($ii = 1; $ii <= 7; $ii++){ //ii - номер строчки
             switch ($ii) {
@@ -53,22 +53,11 @@
                     $subject_time = '20:00-21:30';
                     break;
            }
-           $date_a = str_replace(".", "-", $date);
-           $date_a = "2021-".$date_a;
-           if($i == 1){
-            $date_a = '2021-09-30';
-           }
-           else
-           {
-            if($i == 2){
-                $date_a = '2021-10-01';
-                 }
-                else
-                {
-                 break;
-                }
-           }
-            
+
+           $day = substr($date, 0, 2);
+           $mounth = substr($date, -2);
+           $date_a = "2022-".$mounth."-".$day;
+
             //$query = mysqli_query($conn, "SELECT * FROM `TimeTable` WHERE `date` = $date AND `bell_id` = $ii"); //!!!!!преобразовать дату!
             /*$query = mysqli_query($conn, "SELECT id FROM TimeTable WHERE date = '".$date_a."'");
 
@@ -82,12 +71,12 @@
 
                 $query1 = mysqli_query($conn, "SELECT * FROM `classroom` WHERE `id`=$classroom_id");
                 $classroom = mysqli_fetch_assoc($query1);
-                
+
                 $subject_id = $pair['subject_id'];
                 $query2 = mysqli_query($conn, "SELECT * FROM `subject` WHERE `id`=$subject_id");
                 $subject = mysqli_fetch_assoc($query2);
 
-                
+
                 $teacher_id = $pair['teacher_id'];
                 $query3 = mysqli_query($conn, "SELECT * FROM `teachers` WHERE `id`=$teacher_id");
                 $teacher = mysqli_fetch_assoc($query3);
